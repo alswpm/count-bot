@@ -48,5 +48,9 @@ async def start(ctx):
 async def on_ready():
     print(f"✅ 로그인 완료: {bot.user}")
 
+import keep_alive
+keep_alive.keep_alive()
+
 import os
 bot.run(os.getenv("DISCORD_TOKEN"))
+
