@@ -48,4 +48,5 @@ async def start(ctx):
 async def on_ready():
     print(f"✅ 로그인 완료: {bot.user}")
 
-bot.run("MTQzMTk0ODEzODI2ODA3MDAyMw.GWQva7.tPPLUc0YgiIhhdG0k4SUQ91C5N2la4iTTCz7wQ")
+import os
+bot.run(os.getenv("DISCORD_TOKEN"))
